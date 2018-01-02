@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Home of the Skule Stage Band and Jazz Combo. Visit us for event information or booking!">
+    <meta name="author" content="Skule Stage Band">
+    
+    <title>Contact - jazz.skule.ca</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+    <!-- Custom styles for this template -->
+    <link href="css/narrow-jumbotron.css" rel="stylesheet">
+    
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header class="header clearfix">
+        <div id="nav-placeholder"></div>
+        <script>
+        jQuery.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+      </header>
+      
+
+      <main role="main">
+
+
+        
+        <div class="container-fluid">
+            
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Skule Stage Band</h5>
+                  <p class="card-text"><strong>Directors:</strong> Seung-Hun Chung, Apurv Bharadwaj<br>
+                  <strong>Logistics:</strong> William Bateman<br>
+                  <strong>Finance:</strong> Shuyi Wu</p>
+                </div>
+                <div class="card-footer">
+                  <span class="badge badge-secondary">Email</span>          
+              <code>stageband<span style="display:none">asdf</span>@skule.ca</code>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Skule Jazz Combo</h5>
+                  <p class="card-text"><strong>Director:</strong> Adrian Humphry</p>
+                </div>
+                <div class="card-footer">
+                  <span class="badge badge-secondary">Email</span>          
+              <code>jazzcombo<span style="display:none">asdf</span>@skule.ca</code>
+                </div>
+              </div>
+            </div>
+            <br>
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        <p>jazz.skule.ca &copy; 2017<br>Skule&trade; is a registered trademark of the University of Toronto <a href="http://skule.ca">Engineering Society.</a></p>
+        <p id="modified"></p>
+      </footer>
+      <script>
+        $(function() {
+          var lastModified = new Date(document.lastModified);
+          document.getElementById("modified").innerHTML = "Last modified: " + lastModified.toDateString();
+        });
+      </script>
+
+
+    </div> <!-- /container -->
+    
+
+  </body>
+</html>

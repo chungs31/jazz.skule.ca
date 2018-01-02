@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Home of the Skule Stage Band and Jazz Combo. Visit us for event information or booking!">
+    <meta name="author" content="Skule Stage Band">
+    
+    <title>Skule Jazz Combo - jazz.skule.ca</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+    <!-- Custom styles for this template -->
+    <link href="css/narrow-jumbotron.css" rel="stylesheet">
+    
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header class="header clearfix">
+        <div id="nav-placeholder"></div>
+        <script>
+        jQuery.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+      </header>
+
+      <main role="main">
+        
+        <div class="container">
+        <h3>Skule Jazz Combo</h3>
+            <p>
+            The Skule™ Jazz Combo is a small ensemble made up of engineering students with a passion for jazz and improvisation in music. Typical repertoire ranges from jazz standards to funk and some occasional RnB. The Jazz Combo plays at a variety of events including semi-formals, banquets, private parties, and weddings.
+            </p>
+            
+            <h3>Hire Us</h3>
+            <p>
+            Consider hiring the Skule Jazz Combo for your next event! Please <a href="contact.html">contact us</a> for information and booking.
+            </p>
+        </div>
+      <br>
+
+      </main>
+
+      <footer class="footer">
+        <p>jazz.skule.ca &copy; 2017<br>Skule&trade; is a registered trademark of the University of Toronto <a href="http://skule.ca">Engineering Society.</a></p>
+        <p id="modified"></p>
+      </footer>
+      <script>
+        $(function() {
+          var lastModified = new Date(document.lastModified);
+          document.getElementById("modified").innerHTML = "Last modified: " + lastModified.toDateString();
+        });
+      </script>
+
+    </div> <!-- /container -->
+    
+
+  </body>
+</html>

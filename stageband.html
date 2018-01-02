@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Home of the Skule Stage Band and Jazz Combo. Visit us for event information or booking!">
+    <meta name="author" content="Skule Stage Band">
+    
+    <title>Skule Stage Band - jazz.skule.ca</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+    <!-- Custom styles for this template -->
+    <link href="css/narrow-jumbotron.css" rel="stylesheet">
+    
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <!-- UPDATE THIS YEARLY FOR FB EVENTS -->
+    <script>
+        var sb_event_ids = ["150990185638800", "361763437602201"];
+    </script>
+  </head>
+
+  <body>
+    <!-- Facebook API - DO NOT REMOVE -->
+    <script>
+        window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '113355559420481',
+          xfbml      : true,
+          version    : 'v2.11'
+        });
+        FB.AppEvents.logPageView();
+        populateEvents(sb_event_ids);
+        };
+        
+        (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+       
+       function populateEvents(events) {
+            for (var i in events) {
+                console.log(events[i]);
+                FB.api(
+                    '/' + events[i],
+                    'GET',
+                    {},
+                    function(response) {
+                        // Insert your code here
+                        console.log(response);
+                    }
+                );
+            }
+       }
+    </script>
+
+    <div class="container">
+      <header class="header clearfix">
+        <div id="nav-placeholder"></div>
+        <script>
+        jQuery.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+      </header>
+
+      <main role="main">
+        
+        <div class="container">
+        <h3>Skule Stage Band</h3>
+            <p>
+            The 23-member, student run Skule™ Stage Band has been playing to great acclaim at Skule&trade; events for over 30 years. These include the most celebrated dances of the year (Cannonball and Gradball) as well as Suds, the EngSci Dinner Dance, and our very own gigs at Hart House and other local establishments. The Stage Band was established in 1983 by engineering students with help from Mr. Malcolm McGrath of the Skule Alumni Association. It is now the longest running Skule™ Music ensemble, welcoming anybody at U of T who enjoys playing and performing swing, big band, funk, latin, and other genres of jazz music.
+            </p>
+            
+            <h3>Upcoming Events</h3>
+            <div class="list-group">
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Cannonball 1T8: Across the Universe</h5>
+                  <small>Jan 13, 2018</small>
+                </div>
+                <p class="mb-1">Please visit the Facebook <a href="https://www.facebook.com/events/361763437602201/">event page</a> for more details.</p>
+              </div>
+              <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Gradball 1T8</h5>
+                  <small class="text-muted">TBD</small>
+                </div>
+                <p class="mb-1"></p>
+              </div>
+            </div>
+            
+            <br>
+            
+            <h3>Past Events</h3>
+            <div class="list-group">
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Engineering Science Dinner Dance</h5>
+                  <small class="text-muted">Nov 24, 2017</small>
+                </div>
+                <p class="mb-1">Annual dinner dance hosted by the Engineering Science Club. Visit the Facebook <a href="https://www.facebook.com/events/150990185638800/">event page</a> for more details.</p>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Grossman's Tavern</h5>
+                  <small>Dec 5, 2017</small>
+                </div>
+                <p class="mb-1"></p>
+              </div>
+            </div>
+            <br>
+            <img src="assets/stageband_group.jpg" class="img-fluid rounded" alt="stageband">
+        </div>
+        
+
+        
+
+      <br>
+
+      </main>
+
+      <footer class="footer">
+        <p>jazz.skule.ca &copy; 2017<br>Skule&trade; is a registered trademark of the University of Toronto <a href="http://skule.ca">Engineering Society.</a></p>
+        <p id="modified"></p>
+      </footer>
+      <script>
+        $(function() {
+          var lastModified = new Date(document.lastModified);
+          document.getElementById("modified").innerHTML = "Last modified: " + lastModified.toDateString();
+        });
+      </script>
+
+    </div> <!-- /container -->
+    
+
+  </body>
+</html>

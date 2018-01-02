@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Home of the Skule Stage Band and Jazz Combo. Visit us for event information or booking!">
+    <meta name="author" content="Skule Stage Band">
+    
+    <title>Home - jazz.skule.ca</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+    <!-- Custom styles for this template -->
+    <link href="css/narrow-jumbotron.css" rel="stylesheet">
+    
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header class="header clearfix">
+        <div id="nav-placeholder"></div>
+        <script>
+        jQuery.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+      </header>
+
+      <main role="main">
+        <div class="jumbotron">
+          <p class="lead">Welcome to the new home of the Skule Stage Band and the Skule Jazz Combo! Please report any errors to us.</a></p>
+        </div>
+        
+        <div class="container">
+        <h3>About</h3>
+        <p>
+        jazz.skule.ca represents the jazz groups of the engineering student community at the University of Toronto, better known as Skule. These groups include Skule Stage Band Gold, Skule Stage Band Blue, and the Skule Jazz Combo.
+        </p>
+        <p>
+        Also, if you enjoy classical music, consider visiting our parent group, <a href="http://skulemusic.ca">Skule Music!</a>
+        </p>
+        
+        
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="assets/gold_2016.jpg" alt="Stage Band Gold">
+            <div class="card-body">
+              <h5 class="card-title">Stage Band Gold</h5>
+              <p class="card-text">Celebrating 35 years of musical history, the Skule Stage Band is the longest running ensemble at Skule.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="assets/placeholder.png" alt="Stage Band Blue">
+            <div class="card-body">
+              <h5 class="card-title">Stage Band Blue</h5>
+              <p class="card-text">New in the 2017-2018 academic year, Stage Band Blue is an ensemble of junior jazz musicians at Skule.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="assets/combo_2016.jpg" alt="Skule Jazz Combo">
+            <div class="card-body">
+              <h5 class="card-title">Jazz Combo</h5>
+              <p class="card-text">Jazz Combo is a small ensemble made up of engineering students with a passion for jazz and improvisation in music.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      </main>
+
+      <footer class="footer">
+        <p>jazz.skule.ca &copy; 2017<br>Skule&trade; is a registered trademark of the University of Toronto <a href="http://skule.ca">Engineering Society.</a></p>
+        <p id="modified"></p>
+      </footer>
+      <script>
+        $(function() {
+          var lastModified = new Date(document.lastModified);
+          document.getElementById("modified").innerHTML = "Last modified: " + lastModified.toDateString();
+        });
+      </script>
+
+    </div> <!-- /container -->
+    
+
+  </body>
+</html>

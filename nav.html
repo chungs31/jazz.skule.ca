@@ -1,0 +1,33 @@
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="assets/logo.png" width="16.5" height="30" class="d-inline-block align-top" alt="">
+     jazz.skule.ca
+  </a>
+  <ul class="nav nav-pills float-right">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="stageband.html">Stage Band</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="combo.html">Jazz Combo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="join.html">Joining</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+  </ul>
+</nav>
+<script>
+$(document).ready(function(){
+  var $pathname = this.location.pathname;
+  if (this.location.pathname == "/") {
+    $pathname = "/index.html";
+  }
+  $('a[href="' + $pathname + '"]').addClass('active');
+});
+</script>
